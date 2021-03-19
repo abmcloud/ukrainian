@@ -5,6 +5,7 @@ $:.push File.join(File.dirname(__FILE__), 'ukrainian')
 
 require 'i18n'
 require 'ukrainian_rails'
+require 'ukrainian/transliteration'
 
 module Ukrainian
   extend self
