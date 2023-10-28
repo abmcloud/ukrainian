@@ -41,12 +41,12 @@ module Ukrainian
 
   # See I18n::localize
   def localize(object, options = {})
-    I18n.localize(object, options.merge({ :locale => LOCALE }))
+    I18n.localize(object, **options.merge({ :locale => LOCALE }))
   end
   alias :l :localize
 
   def translate(key, options = {})
-    I18n.translate(key, options.merge({ :locale => LOCALE }))
+    I18n.translate(key, **options.merge({ :locale => LOCALE }))
   end
   alias :t :translate
 
